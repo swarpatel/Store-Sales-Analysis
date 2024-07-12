@@ -68,19 +68,7 @@ df
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -400,19 +388,7 @@ df.describe()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -546,7 +522,7 @@ plt.legend()
 
 
     
-![png](output_15_1.png)
+![png](img/output_15_1.png)
     
 
 
@@ -577,7 +553,7 @@ df.hist(figsize=(10,10))
 
 
     
-![png](output_17_1.png)
+![png](img/output_17_1.png)
     
 
 
@@ -605,7 +581,7 @@ sns.countplot(x= df['Branch'], data=df, orient='h',hue=df['Branch'] )
 
 
     
-![png](output_19_2.png)
+![png](img/output_19_2.png)
     
 
 
@@ -637,7 +613,7 @@ sns.countplot(x= df['Payment'], data=df, orient='h', hue=df['Payment'])
 
 
     
-![png](output_21_2.png)
+![png](img/output_21_2.png)
     
 
 
@@ -668,7 +644,7 @@ sns.regplot(x='Rating', y='gross income', data=df)
 
 
     
-![png](output_26_1.png)
+![png](img/output_26_1.png)
     
 
 
@@ -692,7 +668,7 @@ sns.boxplot(x='Branch', y='gross income', data=df, hue='Branch')
 
 
     
-![png](output_28_1.png)
+![png](img/output_28_1.png)
     
 
 
@@ -716,7 +692,7 @@ sns.boxplot(x='Gender', y='gross income',data=df, hue='Gender')
 
 
     
-![png](output_30_1.png)
+![png](img/output_30_1.png)
     
 
 
@@ -739,19 +715,7 @@ df1.groupby(df1.index).mean()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -908,7 +872,7 @@ sns.lineplot(x = df1.groupby(df1.index).mean().index,
 
 
     
-![png](output_34_1.png)
+![png](img/output_34_1.png)
     
 
 
@@ -948,19 +912,7 @@ df[df.duplicated() == True]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1152,7 +1104,7 @@ sns.heatmap(df.isna(), cbar=False)
 
 
     
-![png](output_45_1.png)
+![png](img/output_45_1.png)
     
 
 
@@ -1187,7 +1139,7 @@ sns.heatmap(df_cleaned.isna(), cbar=False)
 
 
     
-![png](output_49_1.png)
+![png](img/output_49_1.png)
     
 
 
@@ -1200,19 +1152,7 @@ df_cleaned
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1496,19 +1436,7 @@ np.round(df1.corr(),2)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1613,7 +1541,7 @@ sns.heatmap(np.round(df1.corr(),2), annot=True)
 
 
     
-![png](output_55_1.png)
+![png](img/output_55_1.png)
     
 
 
